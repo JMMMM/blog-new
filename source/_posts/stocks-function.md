@@ -11,9 +11,9 @@ categories:
 ZT:= C/REF(C,1)>1.098;
 LAST_ZT:= BARSLAST(ZT);
 REF(VOL,LAST_ZT-1) / REF(VOL,LAST_ZT) >= 1.5 
-and REF(C,LAST_ZT-1) < REF(O,LAST_ZT-1) 
+and REF(C,LAST_ZT-1) < REF(C,LAST_ZT) 
 and LAST_ZT <= 5 
-and C<= REF(C,LAST_ZT) and REF(C,LAST_ZT) / C <=1.05
+AND C > REF(L,LAST_ZT) AND REF(C,LAST_ZT) / C >= 1.05
 and REF(C,LAST_ZT) <= HHV(H,LAST_ZT+30);
 
 ```
